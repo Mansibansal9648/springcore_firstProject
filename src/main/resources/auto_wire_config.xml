@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd
+ http://www.springframework.org/schema/context
+ http://www.springframework.org/schema/context/spring-context.xsd">
+
+<!--    <bean class="com.springcore.auto_wire.Address" name="address">-->
+    <bean class="com.springcore.auto_wire.Address" name="address">
+        <property name="street" value="Temp street"/>
+        <property name="city" value="New Delhi"/>
+    </bean>
+<!-- if we are using 2 bean and byType then it will give error becuase it needs only one bean of that type-->
+<!--    <bean class="com.springcore.auto_wire.Address" name="address2">-->
+<!--        <property name="street" value="Second street"/>-->
+<!--        <property name="city" value="Haryana"/>-->
+<!--    </bean>-->
+
+
+    <!--name of the bean should be same as type of variable as we are accessing in another class i.e. address -->
+<!--    <bean class="com.springcore.auto_wire.Employee" name="employee" autowire="byName"/>-->
+    <!-- check the type of the class i.e. com.springcore.auto_wire.Address -->
+<!--    <bean class="com.springcore.auto_wire.Employee" name="employee" autowire="byType"/>-->
+<!--auto wiring using constructor i.e. it is checking name of bean as well -->
+    <bean class="com.springcore.auto_wire.Employee" name="employee" autowire="constructor"/>
+
+    </beans>

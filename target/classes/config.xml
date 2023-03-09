@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+https://www.springframework.org/schema/beans/spring-beans.xsd
+ http://www.springframework.org/schema/context
+ http://www.springframework.org/schema/spring-context.xsd">
+
+    <!--  this is our beans-->
+    <bean class="com.springcore.springcore_firstProject.Student" name="student1" p:studentId ="25344" p:studentName="Mansi Bansal" p:studentAddress="New Delhi"/>
+<!--     <bean class="com.springcore.springcore_firstProject.Student" name="student1">-->
+<!--       <property name="studentId" value="25344" />-->
+<!--      &lt;!&ndash; <value>22344</value>-->
+<!--       </property> &ndash;&gt;-->
+
+<!--        <property name="studentName" value=" Mansi Bansal"/>-->
+<!--      &lt;!&ndash; <value>Mansi Bansal</value>-->
+<!--       </property> &ndash;&gt;-->
+
+<!--        <property name="studentAddress" value=" New Delhi" />-->
+<!--      &lt;!&ndash; <value>New Delhi</value>-->
+<!--       </property> &ndash;&gt;-->
+
+<!--     </bean>-->
+
+    <!--  this is our second beans-->
+    <bean class="com.springcore.springcore_firstProject.Student" name="student2" p:studentId ="26544" p:studentName="Mona Aggarwal" p:studentAddress="Delhi"/>
+<!--    <bean class="com.springcore.springcore_firstProject.Student" name="student2">-->
+<!--        <property name="studentId" value="26544" />-->
+<!--        &lt;!&ndash; <value>22344</value>-->
+<!--         </property> &ndash;&gt;-->
+
+<!--        <property name="studentName" value=" Mona Aggarwal"/>-->
+<!--        &lt;!&ndash; <value>Mansi Bansal</value>-->
+<!--         </property> &ndash;&gt;-->
+
+<!--        <property name="studentAddress" value="Delhi" />-->
+<!--        &lt;!&ndash; <value>New Delhi</value>-->
+<!--         </property> &ndash;&gt;-->
+
+<!--    </bean>-->
+
+
+    </beans>
